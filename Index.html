@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ghost in the Static — Vault I</title>
+    <link href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" rel="stylesheet">
+    <style>
+      body {
+        background: #0d0d0d;
+        color: #f8f8f2;
+        font-family: 'Courier New', Courier, monospace;
+      }
+      .vault {
+        text-align: center;
+        padding: 4rem 2rem;
+      }
+      .vault img {
+        max-width: 400px;
+        width: 100%;
+        border: 2px solid gold;
+        border-radius: 12px;
+        margin-bottom: 1rem;
+        transition: transform 0.4s ease;
+      }
+      .vault img:hover {
+        transform: scale(1.03);
+      }
+      .glow {
+        text-shadow: 0 0 10px #ffcc00;
+        color: gold;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="container-fluid">
+      <ul><li><strong>GHOST STATIC</strong></li></ul>
+      <ul>
+        <li><a href="#">Vaults</a></li>
+        <li><a href="#">Lore</a></li>
+        <li><a href="#" role="button">Scan QR</a></li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <div class="vault">
+        <h2 class="glow">Vault I: Twist of Fate</h2>
+        <p>Edition 16/33 — Limited Drop</p>
+        <img src="https://ghoststatic.cdn/images/twist-front.jpg" alt="Twist of Fate Shirt Front">
+        <img src="https://ghoststatic.cdn/images/vault-badge.jpg" alt="Vault Emblem">
+        <p>QRs embedded in the design lead to <em>unlockable lore, puzzles, and a bonus drop</em>.</p>
+        <p>One of these shirts unlocks the legendary <strong>Sinister Sauce</strong> line...</p>
+      </div>
+    </main>
+
+    <footer class="container">
+      <small><a href="#">© Ghost in the Static</a> • <a href="#">Instagram</a></small>
+    </footer>
+  </body>
+</html>
