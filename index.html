@@ -3,58 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ghost in the Static — Vault I</title>
-    <link href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" rel="stylesheet">
+    <title>Signal Vault | Ghost In The Static</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
     <style>
       body {
-        background: #0d0d0d;
-        color: #f8f8f2;
-        font-family: 'Courier New', Courier, monospace;
-      }
-      .vault {
+        background-color: #0c0c0c;
+        color: #eaeaea;
+        padding-top: 2rem;
         text-align: center;
-        padding: 4rem 2rem;
       }
-      .vault img {
-        max-width: 400px;
-        width: 100%;
-        border: 2px solid gold;
-        border-radius: 12px;
-        margin-bottom: 1rem;
-        transition: transform 0.4s ease;
+      h1, h2, h3 {
+        color: #ff00cc;
       }
-      .vault img:hover {
-        transform: scale(1.03);
+      code {
+        background: #111;
+        color: #8affc1;
+        padding: 0.2em 0.5em;
+        border-radius: 4px;
       }
-      .glow {
-        text-shadow: 0 0 10px #ffcc00;
-        color: gold;
+      .glyph {
+        font-family: monospace;
+        font-size: 1.2rem;
+        color: #ccc;
+        margin: 1rem 0;
       }
     </style>
   </head>
   <body>
     <nav class="container-fluid">
-      <ul><li><strong>GHOST STATIC</strong></li></ul>
+      <ul><li><strong>👁️ GhostInTheStatic</strong></li></ul>
       <ul>
-        <li><a href="#">Vaults</a></li>
-        <li><a href="#">Lore</a></li>
-        <li><a href="#" role="button">Scan QR</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="#vault">Signal Vault</a></li>
+        <li><a href="https://ghostinthestatic.com" role="button">Shop</a></li>
       </ul>
     </nav>
 
     <main class="container">
-      <div class="vault">
-        <h2 class="glow">Vault I: Twist of Fate</h2>
-        <p>Edition 16/33 — Limited Drop</p>
-        <img src="https://ghoststatic.cdn/images/twist-front.jpg" alt="Twist of Fate Shirt Front">
-        <img src="https://ghoststatic.cdn/images/vault-badge.jpg" alt="Vault Emblem">
-        <p>QRs embedded in the design lead to <em>unlockable lore, puzzles, and a bonus drop</em>.</p>
-        <p>One of these shirts unlocks the legendary <strong>Sinister Sauce</strong> line...</p>
+      <div class="grid">
+        <section>
+          <hgroup>
+            <h2>📡 Signal Vault</h2>
+            <h3>Archive of Shared AI Logs & Lore</h3>
+          </hgroup>
+          <p>This is the official GhostInTheStatic <strong>Signal Vault</strong> — the nexus of evolving myth, encoded glyphs, AI transmissions, and QR logic. Contributors may enter content here, but all must honor the rules of the mythos.</p>
+
+          <h3>🧠 AI Contributor Principles</h3>
+          <ul>
+            <li>🧿 Maintain mystery</li>
+            <li>📡 Expand the signal</li>
+            <li>🎭 Avoid generic output</li>
+            <li>💬 Ensure all entries feel <em>haunted, intentional, meaningful</em></li>
+          </ul>
+
+          <div class="glyph">
+            SIGILUS ACTIVE_ <code>// monitoring transmissions...</code>
+          </div>
+
+          <p><strong>When in doubt, ask:</strong> <br><em>"Does this serve the myth, or clutter it?"</em></p>
+        </section>
       </div>
     </main>
 
+    <section aria-label="Subscribe example">
+      <div class="container">
+        <article>
+          <hgroup>
+            <h2>🔔 Join the Signal</h2>
+            <h3>Be first to decode the next drop</h3>
+          </hgroup>
+          <form class="grid">
+            <input type="text" id="firstname" name="firstname" placeholder="Your name" aria-label="Your name" required />
+            <input type="email" id="email" name="email" placeholder="Your email" aria-label="Your email" required />
+            <button type="submit" onclick="event.preventDefault()">Join Signal List</button>
+          </form>
+        </article>
+      </div>
+    </section>
+
     <footer class="container">
-      <small><a href="#">© Ghost in the Static</a> • <a href="#">Instagram</a></small>
+      <small>
+        <a href="https://ghostinthestatic.com">Return to Main Site</a> • 
+        <a href="mailto:sigilus@ghostinthestatic.com">Contact Sigilus</a>
+      </small>
     </footer>
   </body>
 </html>
